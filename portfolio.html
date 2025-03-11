@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /*This will make your images fit into the container*/
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+    <!-- HEADER : TITULO DEL SITIO , NAVBAR (3 ENLACES)-->
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1 class="display-4">BLOG PERSONAL</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <section id="about" class="py-5">
+                <h2>About</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b87148f-5611-43eb-8113-601b8b9264cb/db9ampk-69c11043-01ad-4637-8511-5bfaf8632107.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzliODcxNDhmLTU2MTEtNDNlYi04MTEzLTYwMWI4YjkyNjRjYlwvZGI5YW1way02OWMxMTA0My0wMWFkLTQ2MzctODUxMS01YmZhZjg2MzIxMDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YoOOgQqR2ig9jUSwHDN8UyRUMk_K2YGsX1B1bUq8p5E" class="img-fluid" alt="Your Image">
+                    </div>
+                    <div class="mt-2" >
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/9P4kjROkn8I" title="Lindsey Stirling - Forgotten City (RiME Soundtrack) [Official Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-md-8">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ad temporibus voluptatibus aperiam inventore rerum sequi eligendi pariatur non incidunt sapiente, omnis atque hic dolorum asperiores obcaecati minus perferendis enim!</p>
+                    </div>
+                
+                </div>
+            </section>
+
+            <section id="proyectos" class="py-5">
+                <h2>Proyectos</h2>
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://lawebdelasalud.com/wp-content/uploads/2024/04/Proyecto-de-vida-1.jpg.webp" alt="Project 1" class="img-fluid" style="max-width: 100px; max-height: 100px;"></td>
+                            <td>Project 1</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda saepe harum rem animi veritatis.</td>
+                            <td><a href="https://github.com/yourusername/project1" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to GitHub">Ir a GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://lawebdelasalud.com/wp-content/uploads/2024/04/Proyecto-de-vida-1.jpg.webp" alt="Project 2" class="img-fluid" style="max-width: 100px; max-height: 100px;"></td>
+                            <td>Project 2</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus repudiandae dolor molestiae labore.</td>
+                            <td><a href="https://github.com/yourusername/project2" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to GitHub">Ir a GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://lawebdelasalud.com/wp-content/uploads/2024/04/Proyecto-de-vida-1.jpg.webp" alt="Project 3" class="img-fluid" style="max-width: 100px; max-height: 100px;"></td>
+                            <td>Project 3</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos tenetur repellat beatae.</td>
+                            <td><a href="https://github.com/yourusername/project3" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to GitHub">Ir a GitHub</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+
+            <section id="contacto" class="py-5">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: jdjdjd@hotmail.com</p>
+                    <p>Phone: +34 65758585</p>
+                </div>
+             
+                <div class="col-md-4">
+                    <h5>Follow Me</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Facebook</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Twitter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-white-50">
+            <div class="text-center">
+                <p>&copy; 2025. Sandra Amorós</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
