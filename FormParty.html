@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormParty</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<style>
+    .container {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .form-section {
+        border: 1px solid black;
+    }
+
+    h3 {
+        color: rgb(49, 49, 49);
+        background-color: rgb(182, 182, 182);
+        padding: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+
+
+    <section class="container form-section mt-2 py-2">
+        <form action="/register" method="post">
+
+            <fieldset>
+                <legend>
+                    Preferencias
+                </legend>
+                <div>
+                    <input type="checkbox" id="asignaturageografia" name="asignatura" value="geografia">
+                    <label for="asignaturageografia">Geografía</label>
+                    <input type="checkbox" id="asignaturalengua" name="asignatura" value="lengua">
+                    <label for="asignaturalengua">Lengua</label>
+                    <input type="checkbox" id="asignaturamatematicas" name="asignatura" value="matematicas">
+                    <label for="asignaturamatematicas">Matemáticas</label>
+                    <input type="checkbox" id="asignaturahistoria" name="asignatura" value="historia">
+                    <label for="asignaturahistoria">Historia</label>
+                </div>
+
+                <!-- Textarea -->
+                <div>
+                    <textarea id="comentarios" name="comentarios" rows="8" cols="56"
+                        placeholder="Escriba aquí, por favor"></textarea>
+                </div>
+
+                <!-- DNI y Nombre Apellidos Email Telefono -->
+                <div>
+                    <label for="dni">DNI:</label>
+                    <input type="text" required="true" id="dni" name="dni" placeholder="">
+                </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" required="true" id="nombre" name="nombre" placeholder="">
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" required="true" id="apellidos" name="apellidos" placeholder="">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" required="true" id="email" name="email" placeholder="">
+                </div>
+                <div>
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" required="true" id="phone" name="phone" placeholder="">
+                </div>
+
+                <!-- Picker de color -->
+                <div>
+                    <label for="colorpicker">Elige un color:</label>
+                    <input type="color" id="colorpicker" name="colorpicker">
+                </div>
+
+                <!-- Fecha -->
+                <div>
+                    <label for="datepicker">Elija una hora:</label>
+                    <input type="date" id="datepicker" name="datepicker">
+                </div>
+
+                <!-- Hora-->
+                <div>
+                    <label for="horapicker">Elija una hora:</label>
+                    <input type="time" id="horapicker" name="horapicker">
+                </div>
+
+
+                <!-- Select-->
+                <select name="velocidad">
+                    <option value="100_mbits">100mbits</option>
+                    <option value="1000_mbits">1000</option>
+                </select>
+                <br>
+                <input type="radio" id="lenguajepython" name="lenguaje" value="python">
+                <label for="lenguajepython">Python</label>
+
+                <input type="radio" id="lenguajehtml" name="lenguaje" value="html">
+                <label for="lenguajehtml">HTML</label>
+
+                <input type="radio" id="lenguajevisual" name="lenguaje" value="visual">
+                <label for="lenguajevisual">Visual Basic</label>
+
+                <input type="radio" id="lenguajejava" name="lenguaje" value="java">
+                <label for="lenguajejava">Java</label><br>
+
+                <label for="archivo">Elija un archivo </label>
+                <input type="file" id="archivo" name="archivo">
+            </fieldset>
+
+            <fieldset>
+                <legend>Rellene las opciones siguientes</legend>
+                <div>
+                    <div>
+                        <input type="radio" id="hardwaremonitor" name="hardware" value="hardwaremonitor">
+                        <label for="hardwaremonitor">Monitor LED</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hardware_tarjeta_aceleradora" name="hardware"
+                            value="hardware_tarjeta_aceleradora">
+                        <label for="hardware_tarjeta_aceleradora">Tarjeta Aceleradora</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hardwaressd" name="hardware" value="hardwaressd">
+                        <label for="hardwaressd">SSD</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Botones -->
+            <div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Borrar</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

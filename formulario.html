@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    form {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .form-section {
+        border: 1px solid black;
+    }
+
+    h3 {
+        color: rgb(49, 49, 49);
+        background-color: rgb(182, 182, 182);
+        padding: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+    <section class=" container form-section mt-2">
+
+        <div class="text-center mt-4">
+            <h3>Formulario Login</h3>
+            <form action="/login" method="post">
+                <fieldset>
+                    <div>
+                        <label for="nombre">Username</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </div>
+
+        <!-- nombre email asunto mensaje -->
+        <div class="text-center mt-4">
+            <h3>Formulario Contacto</h3>
+            <form action="/contacto" method="post">
+                <fieldset>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required
+                            maxlength="50">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="comentario">Asunto:</label><br>
+                        <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe tu mensaje"
+                            maxlength="500"></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- nombre email asunto mensaje boton seleccion multiple (checkboz) ratio-->
+        <div class="text-center mt-4">
+            <h3>Formulario Encuesta</h3>
+            <form action="/encuesta" method="post">
+                <fieldset>
+                    <!--  selección múltiple (radio) -->
+
+                    <h5>Cuáles es tu interés principal?</h5>
+                    <input type="radio" id="tecnologia" name="intereses" value="tecnologia" required>
+                    <label for="tecnologia">Tecnología</label>
+
+                    <input type="radio" id="deportes" name="intereses" value="deportes">
+                    <label for="deportes">Deportes</label>
+
+                    <input type="radio" id="arte" name="intereses" value="arte">
+                    <label for="arte">Arte</label>
+
+                    <input type="radio" id="musica" name="intereses" value="musica">
+                    <label for="musica">Música</label>
+
+                    <input type="radio" id="viajes" name="intereses" value="viajes">
+                    <label for="viajes">Viajes</label>
+
+
+                    <!-- checkbox-->
+                    <div>
+                        <h5>Qué actividades realizas en tu tiempo libre? </h5>
+                        <div> <input type="checkbox" id="leer" name="actividades" value="leer">
+                            <label for="leer">Leer</label>
+                        </div>
+
+                        <div> <input type="checkbox" id="correr" name="actividades" value="correr">
+                            <label for="correr">Correr</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="cocinar" name="actividades" value="cocinar">
+                            <label for="cocinar">Cocinar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="jugar" name="actividades" value="jugar">
+                            <label for="jugar">Jugar videojuegos</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
