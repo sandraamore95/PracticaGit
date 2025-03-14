@@ -5,13 +5,15 @@ body {
     display: flex;
     justify-content: center; /* centra la seccion en el centro*/
     align-items: center;  /* como queremos centrarla*/
+    min-height: 100vh;
 }
 
 .contacto-section {
-  margin-top:40px;
+    margin-top:40px;
     display: flex;
     flex-direction: column; /* como queremos que se disponga*/
     align-items: center;
+    justify-content: center;
 }
 
 .contacto-person {  /* disponemos : foto + info */
