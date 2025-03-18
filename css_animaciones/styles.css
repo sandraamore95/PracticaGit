@@ -1,0 +1,171 @@
+.container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: transform 0.5s ease;
+}
+
+.box:hover {
+    transform: translateZ(100px);
+}
+
+/* Ejemplo de translate: mueve la caja 50px a la derecha y 20px hacia abajo */
+.translate:hover {
+    transform: translate(50px, 20px);
+}
+
+/* Ejemplo de rotate: rota la caja 45 grados */
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* Ejemplo de scale: escala la caja 1.5 veces su tamaño original */
+.scale:hover {
+    transform: scale(1.5);
+}
+
+/* Ejemplo de skew: inclina la caja 20 grados horizontal y 10 grados vertical */
+.skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+/* Ejemplo combinando varias transformaciones */
+.combo:hover {
+    transform: translate(20px, 20px) rotate(30deg) scale(1.2) skew(10deg, 5deg);
+}
+
+#buttonShop {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* La transición se aplica a background-color y transform */
+    transition: background-color 0.5s ease, transform 0.5s ease-in-out;
+}
+
+#buttonShop:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+.retraso {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s ease-out 1s;
+}
+
+.retraso:hover {
+    width: 300px;
+    height: 200px;
+}
+
+div {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cuadrado1 {
+    width: 400px;
+    height: 400px;
+    background-color: #3498db;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+.cuadrado1:hover {
+    background-color: #88ffa2;
+    transition: background-color 1s, transform 0.5s 1s;
+    transform: scale(1.2) rotate(45deg);
+}
+
+.cuadrado1 h1 {
+    color: white;
+    transition: transform 1s, color 1s 1s;
+}
+
+
+.cuadrado1:hover h1 {
+    transform: translate(30%, 50%);
+    transition: transform 1s 0s, color 1s 1s;
+    color: #ff5ff7;
+}
+
+.cuadrado2 {
+    width: 300px;
+    height: 300px;
+    background-color: #e7ff7e;
+    transition: transform 3s;
+}
+
+.cuadrado1:hover + .cuadrado2 {
+    transform: translateX(calc(100vw - 150px)) rotate(360deg);
+}
+
+.button4 {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button4:hover{
+    background-color: #ff5c3f;
+    transform: perspective(800px) rotateY(19deg) scale(1.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    color: black;
+    background-image: url('https://gfx.r-gol.com/media/res/products/951/155951/465x605/307033-03_1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 80, 202);
+
+}
+
+.card-body {
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.card:hover .card-body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.button-card {
+    padding: 10px 20px;
+    background-color: #e4e4e4;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-card:hover {
+    background-color: #e7ff7e;
+}
