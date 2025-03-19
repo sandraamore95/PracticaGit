@@ -31,6 +31,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 10px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .content {
@@ -52,10 +54,8 @@ footer {
 /* TABLETS */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .centro {
-        grid-template-columns: 2fr 1fr; 
-    }
-    .content, .sidebar {
         width: 100%; 
+        margin: 0;
     }
 }
 
@@ -63,5 +63,6 @@ footer {
 @media only screen and (max-width: 767px) {
     .centro {
        flex-direction: column;
+       margin: 0; 
     }
 }
